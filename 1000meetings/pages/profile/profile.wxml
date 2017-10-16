@@ -1,0 +1,6 @@
+<view class="pic"><image src='/images/theme_03.jpg'></image></view>
+<view class="title">节约时间和预算</view>
+<view class="title">免费获得酒店地推荐</view>
+<view class="title">更多优惠</view>
+<button catchtap='fnGo'>现在开始！</button>
+

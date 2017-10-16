@@ -1,0 +1,17 @@
+<template name="item_horizontal">
+    <view class="item_h" catchtap="onTap" data-type="{{item.type}}" data-id="{{item.id}}" data-item="{{item}}">
+      <image src="{{item.title_pic}}"></image>
+      <view class="txt">
+        <text class="titles">{{item.title}}</text>
+        <text class="messages">{{item.text}}</text>
+      </view>
+    </view>
+</template>
+
+<template name="item_vertical">
+    <view class="item_v" catchtap="onTap" data-id="{{item.id}}">
+      <image src="{{item.title_pic}}"></image>
+      <view class="titles">{{item.title}}</view>
+      <view class='location'>地址：{{item.location}}</view>
+    </view>
+</template>

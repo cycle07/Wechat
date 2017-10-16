@@ -1,0 +1,13 @@
+<view class="contain">
+  <block wx:for="{{arr}}" wx:key="{{index}}">
+    <view class='box'>
+      <view class='hotal'>{{item.request.hotal}}</view>
+      <view class='company'>申请公司：{{item.contact.company}}</view>
+      <view class='location'>地点：{{item.request.address}}</view>
+      <view class='time'>日期：{{item.request.DateStart}}至{{item.request.DateEnd}}</view>
+      <view class='people'>人数：{{item.request.amountMin}}~{{item.request.amountMin}}人</view>
+      <view class='delete' catchtap='fnEide' data-index='{{index}}'>修改</view>
+      <view class='delete' catchtap='fnDel' data-index='{{index}}'>删除</view>
+    </view>
+  </block>
+</view>

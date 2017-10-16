@@ -1,0 +1,14 @@
+.title{margin:100rpx auto;font-size:40rpx;color:#f76f00;font-weight:bolder;text-align: center}
+label{width:100%;display: block;padding:20rpx;font-size:30rpx;margin-left:20rpx;}
+
+.radio-group{width:80%;display: flex}
+.section__title{font-size:30rpx;padding:15rpx 25rpx;color:#003680;display: flex;align-items: center;}
+.form-group{height:auto;width:100%;display: flex;margin-bottom:30rpx;}
+.input-text,textarea{border: 2rpx solid #eee;margin:0 25rpx;padding:5rpx 10rpx;font-size:28rpx;width:100%;}
+.num{width:250rpx;line-height:50rpx;}
+.data-group{flex-direction: column;}
+.checkboxSub{background: #f7f7f7}
+.checkboxSub .input-text{background: #fff;}
+
+.btn{width:100%;height:auto;text-align: center;}
+.button{width:30%;text-align: center;background: #f76f00;color:#fff;margin:80rpx 20rpx;font-size:32rpx;display: inline-block;line-height: 70rpx;}

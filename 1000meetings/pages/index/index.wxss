@@ -1,0 +1,9 @@
+page{background-color: #fff;height:100%;}
+.banner{height:300rpx;width:100%;overflow: hidden;}
+.news{width:96%;font-size:32rpx;padding:15rpx;color:#033e84;font-weight:700;}
+.news span{float:right;font-size:28rpx;color:#74758a;font-family:consolas;font-weight:normal }
+.item_h{width:100%;height:215rpx;background-color:#f7f7f7;border-bottom: 1rpx solid #ced9df;padding:25rpx;box-sizing: border-box}
+.item_h image{height:163rpx;width:163rpx;padding-right:25rpx;float:left;}
+.item_h .txt{display: flex;flex-direction: column;line-height: 34rpx;}
+.item_h .titles{color:#5a7088;padding-bottom: 18rpx;overflow: hidden;height:30rpx;line-height: 42rpx;}
+.item_h .messages{font-size:26rpx;height:100rpx;overflow: hidden;padding-right:10rpx;}

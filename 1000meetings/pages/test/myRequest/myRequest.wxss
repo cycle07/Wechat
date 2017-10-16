@@ -1,0 +1,2 @@
+.box{width:96%;height:400rpx;padding:20rpx;background: #f7f7f7;border:2rpx solid #ccc;box-sizing: border-box;margin:20rpx auto;}
+.delete{line-height: 60rpx;width:180rpx;background:#07358b;color:#fff;float:right;margin: 20rpx;text-align: center;border-radius: 10rpx; }

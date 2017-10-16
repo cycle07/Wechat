@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/profile/profile",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/test/myRequest/myRequest",
+    "pages/test/myRequestEdit/myRequestEdit",
+    "pages/profile/workflow/contact/contact",
+    "pages/profile/workflow/hotal/hotal",
+    "pages/logs/logs",
+    "pages/test/favour/favour",
+    "pages/profile/workflow/request/request",
+    "pages/profile/workflow/arrange/arrange",
+    "pages/index/detail/detail",
+    "pages/index/news/news",
+    "pages/index/spOffer/spOffer",
+    "pages/logs/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f1aa04",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/ic_tab_home_normal.png",
+        "selectedIconPath":"images/ic_tab_home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/ic_tab_status_normal.png",
+        "selectedIconPath": "images/ic_tab_status_active.png",
+        "text": "寻找会场"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "images/ic_tab_group_normal.png",
+        "selectedIconPath": "images/ic_tab_group_active.png",
+        "text": "预约会场"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "images/ic_tab_profile_female_normal.png",
+        "selectedIconPath": "images/ic_tab_profile_female_active.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

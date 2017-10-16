@@ -1,0 +1,17 @@
+<view class="cityTitle">
+  <view class='cityBtn' catchtap="cityStart">{{default_selector}} {{default_selectorL2}}</view>
+  <view class='cancel' catchtap="cityCancel">取消</view>
+</view>
+<view class='citySelector' wx:if="{{cityStats}}">
+  <view class='cityL1' wx:for="{{arr_city}}" wx:key="{{index}}" data-index="{{index}}" catchtap="citySelected">{{item.cityL1Name}}</view>
+  <view class='citySelectorL2' wx:if="{{cityL2Stats}}">
+    <view class='cityL2' wx:for="{{arr_cityL2}}" wx:key="{{index}}" data-index="{{index}}" data-val="{{item}}" catchtap="cityL2Selected">{{item.cityL2Name}}</view>
+  </view>
+</view>
+<view class="wrap">
+  <import src="../index/template/temp.wxml"/>
+  <block  wx:for="{{arr}}" wx:key="{{index}}">
+    <template is="item_vertical" data="{{item}}"></template>
+  </block>
+</view>
+<!-- <wxs src="./logs.wxs" module="tools"/> -->

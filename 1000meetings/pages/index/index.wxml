@@ -1,0 +1,30 @@
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+  <swiper-item>
+    <image src="/images/banner01.jpg" class="banner"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/banner02.jpg" class="banner"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/banner03.jpg" class="banner"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/banner04.jpg" class="banner"/>
+  </swiper-item>
+</swiper>
+<view class='news'>最新优惠<span catchtap="onTapSpDetail">更多>></span></view>
+<view class="wrap">
+  <import src="template/temp.wxml"/>
+  <block  wx:for="{{arr_spOffer}}" wx:key="{{index}}">
+    <template is="item_horizontal" data="{{item}}"></template>
+  </block>
+</view>
+<view class='news'>最新动态<span catchtap="onTapNewsDetail">更多>></span></view>
+<view class="wrap">
+  <import src="template/temp.wxml"/>
+  <block  wx:for="{{arr_news}}" wx:key="{{index}}">
+    <template is="item_horizontal" data="{{item}}"></template>
+  </block>
+</view>
+
+

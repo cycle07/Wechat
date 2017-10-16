@@ -1,0 +1,7 @@
+<view class="wrap">
+  <import src="../../index/template/temp.wxml"/>
+  <block  wx:for="{{arr}}" wx:key="{{index}}">
+    <template is="item_horizontal" data="{{item}}"></template>
+  </block>
+  <view class="text" wx:if="{{notify}}">收藏夹已空！</view>
+</view>

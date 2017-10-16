@@ -1,0 +1,4 @@
+.title{margin:100rpx auto;font-size:40rpx;color:#f76f00;font-weight:bolder;text-align: center}
+label{width:100%;display: block;padding:20rpx;font-size:30rpx;margin-left:20rpx;}
+.button{width:40%;text-align: center;background: #f76f00;color:#fff;margin:80rpx auto;display: block}
+.mine{margin:20rpx auto;color:#f76f00;border-bottom: 2rpx solid #f76f00;width:80%;}

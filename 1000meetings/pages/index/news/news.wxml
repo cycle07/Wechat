@@ -1,0 +1,6 @@
+<view class="wrap">
+  <import src="../template/temp.wxml"/>
+  <block  wx:for="{{arr}}" wx:key="{{index}}">
+    <template is="item_horizontal" data="{{item}}"></template>
+  </block>
+</view>

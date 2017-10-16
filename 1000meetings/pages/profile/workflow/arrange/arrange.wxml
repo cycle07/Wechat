@@ -1,0 +1,75 @@
+<view class="title">第三步：活动安排</view>
+<form bindsubmit="formSubmit">
+  <block wx:for="{{listData}}" wx:key="{{index}}">
+    <view class="table">
+      <view class="th">
+        <image src='/images/calendar.jpg'></image>
+        <view class='dayNum'>Day{{item.dayNum}}</view>
+        <view class='weekDay'>
+          <text>{{item.dayDate}}</text>
+          <text>{{item.dayWeek}}</text>
+        </view>
+      </view>
+      <block wx:for="{{item.HallData}}" wx:for-index="index2" wx:for-item="item2" wx:key="{{index2}}">
+        <view class="tr">
+          <view class="td select">
+            <checkbox-group name="{{item.dayDate}}+selectHall+{{item2.hallName}}">   
+              <lable><checkbox catchtap='fnSelectHall' data-index="{{index}}" data-indexz="{{index2}}" checked="{{item2.stats}}" class='section__title' value="{{item2.hallName}}"/></lable>  
+            </checkbox-group>
+          </view>
+          <view class="td itemName" class="{{item2.stats?'td itemName':'td itemName throught'}}">{{item2.hallName}}</view>
+          <view class="td selectNum">1</view>
+          <view class="td select closeBorder">厅</view>
+        </view>
+        <view class="tr">
+          <view class="td remarks">
+            <input type="text" class="input-text" name="{{item.dayDate}}+{{item2.hallName}}+Remark" placeholder="备注" disabled='{{!item2.stats}}'/> 
+          </view>
+        </view>
+      </block>
+      <block>
+        <view class="tr">
+          <view class="td select">
+            <checkbox-group name="{{item.dayDate}}+DoubleSelected">   
+              <lable ><checkbox catchtap='fnSelectDouble' data-index="{{index}}" checked="{{item.listRequestRoomDouble}}" class='section__title' value="{{item.listRequestRoomDouble}}"/></lable>  
+            </checkbox-group>
+          </view>
+          <view class="{{item.listRequestRoomDouble?'td itemName':'td itemName throught'}}">双床房</view>
+          <view class="td selectNum">
+            <input type="text" class="input-text" name="{{item.dayDate}}+DoubleNum"  value="{{item.listRequestRoomDouble}}" disabled='{{!item.listRequestRoomDouble}}'/> 
+          </view>
+          <view class="td select closeBorder">间</view>
+        </view>
+        <view class="tr">
+          <view class="td remarks">
+            <input type="text" class="input-text" name="{{item.dayDate}}+DoubleRemarks" placeholder="备注" disabled='{{!item.listRequestRoomDouble}}'/> 
+          </view>
+        </view>
+      </block>
+      <block>
+        <view class="tr">
+          <view class="td select">
+            <checkbox-group name="{{item.dayDate}}+SingleSelected">   
+              <lable ><checkbox catchtap='fnSelectSingle' data-index="{{index}}" checked="{{item.listRequestRoomSingle}}"  class='section__title' value="{{item.listRequestRoomSingle}}"/></lable>  
+            </checkbox-group>
+          </view>
+          <view class="{{item.listRequestRoomSingle?'td itemName':'td itemName throught'}}">大床房</view>
+          <view class="td selectNum">
+            <input type="text" class="input-text" name="{{item.dayDate}}+SingleNum" value="{{item.listRequestRoomSingle}}" disabled='{{!item.listRequestRoomSingle}}'/> 
+          </view>
+          <view class="td select closeBorder">间</view>
+        </view>
+        <view class="tr">
+          <view class="td remarks">
+            <input type="text" class="input-text" name="{{item.dayDate}}+SingleRemark" placeholder="备注" disabled='{{!item.listRequestRoomSingle}}'/> 
+          </view>
+        </view>
+      </block>      
+    </view>
+  </block>
+
+  <view class='btn'>
+    <button catchtap='fnBack' class='button'>上一步</button>  
+    <button formType="submit" class='button'>下一步</button>  
+  </view>
+</form>

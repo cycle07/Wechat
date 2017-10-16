@@ -1,0 +1,4 @@
+.pic{width:100%;}
+.pic image{height:136rpx;width:360rpx;display:block;margin:100rpx auto;}
+.title{margin:50rpx auto;font-size:40rpx;color:#f76f00;font-weight:bolder;text-align: center}
+button{padding:5rpx;width:40%;text-align: center;background: #f76f00;color:#fff;margin-top:80rpx;}

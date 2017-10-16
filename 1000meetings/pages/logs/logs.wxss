@@ -1,0 +1,15 @@
+.banner{height:362rpx;width:750rpx;overflow: hidden;}
+
+.cityTitle{background: #f7f7f7;color:#487cb6;font-size:30rpx;padding:15rpx;height:40rpx;}
+.cityBtn{float:left}
+.citySelector{height:auto;width:100%;background:#fcfcfc}
+.cityL1{float:left;color:#487cb6;font-size:25rpx;padding:5rpx;background: #f7f7f7;width:128rpx;margin: 15rpx 20rpx;text-align: center;border:2rpx solid #eee;}
+.citySelectorL2{height:auto;background:#f7f7f7;float:left;width:100%;}
+.cityL2{float:left;color:#487cb6;font-size:25rpx;padding:5rpx;background: #fcfcfc;width:128rpx;margin: 15rpx 20rpx;text-align: center;border:2rpx solid #fff;}
+.cancel{float:right;padding-right:10rpx;}
+
+.wrap{display: flex;flex-direction: wrap;flex-wrap: wrap;width:100%}
+.item_v{width:350rpx;height:auto;background-color:#f7f7f7;padding:3%;box-sizing: border-box;margin:10rpx;justify-content: space-between}
+.item_v image{width:100%;height:300rpx;}
+.item_v .titles{color:#5a7088;padding-bottom: 15rpx;font-size: 30rpx;overflow: hidden;height:28rpx;width:100%;}
+.item_v .location{font-size:25rpx;}

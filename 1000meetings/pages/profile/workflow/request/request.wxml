@@ -1,0 +1,79 @@
+<view class="title">第二步：需求确认</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section__title">活动类型(*)</view>  
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="activityType" placeholder="例如:年会，奖励旅游，订货会，新品发布会，等" />  
+    </view>
+
+  <view class="section__title">活动人数(*)</view>  
+    <view class='form-group'>  
+        <input type="text" class="input-text num" name="amountMin" placeholder="最低" />
+        <view class='iconP'>-</view> 
+        <input type="text" class="input-text num" name="amountMax" placeholder="最高" />  
+    </view>  
+
+  <view class="section__title">活动目的地(*)</view>  
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="address" placeholder="例如:杭州，金鸡湖附近，南方城市等" />  
+    </view>
+
+  <view class="section__title">活动档期(*)</view>  
+    <view class='form-group data-group'>  
+
+      <view class='section__title'>
+        <picker class="input-text num"  mode="date" value="{{date}}" start="2015-09-01" end="2018-09-01" bindchange="bindDateChangeStart">  
+          <view class="picker">{{dateStart}}</view>  
+        </picker> 开始日期
+      </view>   
+
+      <view class='section__title'>
+        <picker class="input-text num"  mode="date" value="{{date}}" start="2015-09-01" end="2018-09-01" bindchange="bindDateChangeEnd">  
+          <view class="picker">{{dateEnd}}</view>  
+        </picker> 结束日期
+      </view> 
+      
+      <checkbox-group name="modifiable">  
+        <lable class='section__title'><checkbox value="档期可换"/>档期可换</lable> 
+      </checkbox-group>
+    </view>  
+  <view class="section__title">活动服务(*)</view>  
+    <view class='form-group data-group'> 
+
+      <checkbox-group name="hall">  
+        <lable class='section__title'><checkbox value="会议厅" catchtap='fnOpenA'/>会议厅</lable> 
+      </checkbox-group>
+      <view class='section__title checkboxSub' wx:if="{{subA_stats}}">需要
+        <input type="text" class="input-text num" name="hall_num"/> 间会议厅
+      </view>
+
+      <checkbox-group name="acco">   
+        <lable class='section__title'><checkbox value="住宿" catchtap='fnOpenB'/>住宿</lable>  
+      </checkbox-group>
+      <view class='section__title checkboxSub' wx:if="{{subB_stats}}">需要
+        <input type="text" class="input-text num" name="accoDouble_num"/>双床房每晚 
+      </view>
+      <view class='section__title checkboxSub' wx:if="{{subB_stats}}">需要
+        <input type="text" class="input-text num" name="accoSingle_num"/>单床房每晚 
+      </view>
+
+      <checkbox-group name="food">  
+        <lable class='section__title'><checkbox value="用餐"  catchtap='fnOpenC'/>用餐</lable>
+        <view class='section__title checkboxSub' wx:if="{{subC_stats}}">
+          <lable class="section__title"><checkbox value="茶歇"/>茶歇</lable>
+          <lable class="section__title"><checkbox value="午餐"/>午餐</lable>
+          <lable class="section__title"><checkbox value="鸡尾酒"/>鸡尾酒</lable>
+          <lable class="section__title"><checkbox value="晚餐"/>晚餐</lable>
+        </view>
+      </checkbox-group>
+
+    </view> 
+    
+  <view class="section__title">额外需求</view>  
+    <view class='form-group'>  
+        <textarea name="otherRequest"></textarea>
+    </view>
+  <view class='btn'>
+    <button catchtap='fnBack' class='button'>上一步</button>  
+    <button formType="submit" class='button'>下一步</button>  
+  </view>
+</form>

@@ -1,0 +1,40 @@
+<view class="title">第四步：联系方式</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section__title">公司(*)</view>  
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="company"/>  
+    </view>
+
+  <view class="section__title">姓名(*)</view>  
+    <view class='form-group'>
+        <radio-group class="radio-group" name="gender">
+          <label class="radio">
+          <radio value="先生" />先生
+          </label>
+          <label class="radio">
+          <radio value="女士" />女士
+          </label>
+        </radio-group>  
+    </view>  
+    <view class='form-group'>
+        <input type="text" class="input-text num" name="FirstName" placeholder="FirstName" />
+        <input type="text" class="input-text num" name="LastName" placeholder="LastName" />  
+    </view>
+  <view class="section__title">邮箱地址(*)</view>  
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="mail"/>  
+    </view>
+
+  <view class="section__title">座机(*)</view>  
+    <view class='form-group'>
+        <input type="text" class="input-text" name="telephone"/>  
+    </view>
+  <view class="section__title">手机</view>  
+    <view class='form-group'>  
+        <input type="text" class="input-text" name="mobile"/>  
+    </view>
+  <view class='btn'>
+    <button catchtap='fnBack' class='button'>上一步</button>  
+    <button formType="submit" class='button'>完成</button>  
+  </view>
+</form>
